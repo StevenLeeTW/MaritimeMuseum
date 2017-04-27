@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test800480"
+    tools:context=".MainMenu" >
+
+    <Button
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/shape1"
+        android:text="介紹" />
+
+    <Button
+        android:id="@+id/visitInfo"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/intro"
+        android:layout_alignBottom="@+id/intro"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape1"
+        android:text="參展資訊" />
+
+    <Button
+        android:id="@+id/itemInfo"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/visitInfo"
+        android:layout_alignBottom="@+id/visitInfo"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape1"
+        android:text="查詢展品" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maritimemuseum"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+      <uses-permission android:name="android.permission.VIBRATE"/>    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" /><uses-feature android:name="android.hardware.camera" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.maritimemuseum.Loading"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.maritimemuseum.MainIntro"
+            android:label="@string/title_activity_main_intro" >
+        </activity>
+        <activity
+            android:name="com.example.maritimemuseum.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.maritimemuseum.MainMenu"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="com.example.maritimemuseum.VisitInformation"
+            android:label="@string/title_activity_visit_information" >
+        </activity>
+        <activity
+            android:name="com.example.maritimemuseum.QRcode"
+            android:label="@string/title_activity_qrcode" >
+        </activity>
+        
+        <activity
+        android:name=".BarCodeTestActivity">
+         </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+    </application>
+
+</manifest>
